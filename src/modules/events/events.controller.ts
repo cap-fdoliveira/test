@@ -1,5 +1,5 @@
-import { Controller, Get } from '@nestjs/common';
-import { EventsService } from './events.service';
+import { Controller, Get } from '@nestjs/common'
+import { EventsService } from './events.service'
 
 @Controller('/eventos')
 export class EventsController {
@@ -7,6 +7,6 @@ export class EventsController {
 
   @Get()
   getEvents() {
-    return this.eventsService.getEvents();
+    return this.eventsService.getEvents()
   }
 }
